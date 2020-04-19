@@ -1,0 +1,151 @@
+body {
+	font-family: "yanone",Arial,Helvetica;
+	font-size: 20px;
+	background: url("../img/wallpaper.jpg");
+	background-attachment: fixed;
+}
+
+.clearfix {
+	float: none;
+	clear: both;
+}
+
+
+h2, h3 {
+	font-weight: bold;
+}
+
+/*Barra de navegación*/
+header {
+	display: block;
+	width: 100%;
+	height: 90px;
+	background: rgba(53,103,164,0.8);
+	position: fixed;
+	text-transform: uppercase;
+}
+
+header ul {
+	display: block;
+	width: 50%;
+	height: inherit;
+	margin: 0px auto;
+	margin-top: -3px;
+}
+
+header ul li {
+	display: inline-block;
+	margin: 0px auto;
+	text-align: center;
+	line-height: 90px;
+}
+
+header a {
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: inherit;
+	text-decoration: none;
+	color: white;
+	transition: all 300ms;
+}
+
+header a:hover, .actived {
+	background: rgba(0,0,0,0.8);
+}
+
+/*Logotipo*/
+#logo {
+	font-family: "finger";
+	font-size: 30px;
+}
+
+#logo a {
+	transition: color 400ms, transform 500ms;
+}
+
+header #logo a:hover {
+	background: transparent;
+	color: black;
+	transform: scale(1.50);
+}
+
+
+/*Contenedor principal*/
+#content {
+	min-height: 600px;
+	height: auto;
+	width: 75%;
+	margin: 0px auto;
+	box-shadow: 0px 0px 40px black;
+	border-left: 1px solid #B7B7B7;
+	background: rgba(255, 255, 255, 0.7);
+	padding-top: 120px;
+}
+
+
+/*Pie de página*/
+footer {
+	width: 75%;
+	margin: 0px auto;
+	padding-top: 15px;
+	color: rgba(0,0,0, 0.5);
+}
+
+
+/*Formularios*/
+
+form {
+	width: 50%;
+}
+
+label {
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+form input[type="text"], 
+form input[type="number"],
+form input[type="email"],
+form textarea:focus {
+	width: 40%;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+form input[type="text"]:focus, 
+form input[type="number"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+	border: 1px solid rgba(53,103,164,0.8);
+}
+
+
+form button,
+form input[type="submit"],
+.button-edit,
+.button-delete {
+	display: block;
+	font-size: 17px;
+	padding: 5px;
+	margin-top: 15px;
+	color: white;
+	background: rgba(53,103,164,1); 
+	cursor: pointer;
+	border: 1px solid rgba(13,67,133,0.8);
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+	background: rgba(53,103,164,0.8); 
+	border: 1px solid rgba(13,67,133,0.8);
+}
+
+.form_error {
+	padding: 3px;
+	color: green;
+	font-size: 15px;
+	margin-left: 5px;
+}

@@ -1,0 +1,47 @@
+#title {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+#title h1 {
+	font-family: "finger";
+	font-size: 60px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+
+#title h2 {
+	font-size: 25px;
+	color: gray;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+#title p {
+	color: #5c84b5;	
+}
+
+article.about {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-size: 23px;
+}
+
+.about h2 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+
+}
+
+.about p {
+	padding-top: 10px;
+	padding-bottom: 30px;
+	text-align: justify;
+	letter-spacing: 2px;
+}

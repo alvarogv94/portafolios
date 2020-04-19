@@ -1,0 +1,22 @@
+<div id="container">
+	<h1>Hoja contacto</h1>
+
+	<!-- #textos lo usamos para el viewchilds, y appResltado es la directiva personalizada-->
+	<div #textos appResaltado>
+		<p>
+			Esta es la página de contacto
+		</p>
+	</div>
+
+
+	<input type="text" [(ngModel)] = "send" />
+	<hr />
+	<div *ngIf="send">
+		<app-slider [send] = "send"
+					(lanzaEmite) = "emiteDatos($event)"
+		></app-slider>
+	</div>
+
+
+<p *ngIf="variablePadre">Padre: {{ variablePadre.nombre }}</p>
+</div>
